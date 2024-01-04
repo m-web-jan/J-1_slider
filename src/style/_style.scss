@@ -1,0 +1,40 @@
+body {
+    font-family: 'Oswald';
+    background-color: $back;
+    color: $text;
+}
+
+h1 {
+    text-align: center;
+    font-size: 50px;
+}
+.slider {
+    display: flex;
+    margin-top: 150px;
+    justify-content: center;
+    column-gap: 50px;
+}
+.slides {
+    display: flex;
+    column-gap: 25px;
+    overflow-x: hidden;
+}
+.arrow {
+    width: 35px;
+    height: 35px;
+    align-self: center;
+    border-radius: 100px;
+    padding: 15px;
+    background-color: rgb(53, 53, 71);
+    cursor: pointer;
+}
+.slide {
+    padding: 20px;
+    background-color: rgb(53, 53, 71);
+    border-radius: 25px;
+    transition: .3s;
+}
+.disable {
+    filter: brightness(.6);
+    cursor: default;
+}
