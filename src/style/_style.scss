@@ -3,38 +3,55 @@ body {
     background-color: $back;
     color: $text;
 }
-
+p {
+    margin: 0;
+}
 h1 {
     text-align: center;
     font-size: 50px;
 }
-.slider {
-    display: flex;
-    margin-top: 150px;
-    justify-content: center;
-    column-gap: 50px;
+
+.calc_body {
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 10px;
+    row-gap: 10px;
+    max-width: 280px;
 }
-.slides {
-    display: flex;
-    column-gap: 25px;
-    overflow-x: hidden;
+.btn:hover {
+    filter: opacity(0.8);
 }
-.arrow {
-    width: 35px;
-    height: 35px;
-    align-self: center;
-    border-radius: 100px;
-    padding: 15px;
-    background-color: rgb(53, 53, 71);
+.btn {
+    text-align: center;
+    padding: 15px 25px;
+    border-radius: 50px;
+    font-size: 25px;
+    background-color: rgb(70, 70, 95);
     cursor: pointer;
 }
-.slide {
-    padding: 20px;
-    background-color: rgb(53, 53, 71);
-    border-radius: 25px;
-    transition: .3s;
+input {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    border: none;
+    outline: none;
+    padding: 0 10px;
+    color: $text;
+    font-size: 30px;
+    background-color: $back;
+    text-align: right;
 }
-.disable {
-    filter: brightness(.6);
-    cursor: default;
+.signs {
+    background-color: #e7dfc7;
+    color: #46465f;
+}
+.zero {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.clear {
+    background-color: #ba5d48;
+}
+.none {
+    display: none;
 }
